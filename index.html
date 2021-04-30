@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css flies-->
+    <!--all.css-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!--bootstrap.css-->
+    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--fontawesome.css-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!--fontawesome.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
+        integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
+        crossorigin="anonymous" />
+    <!--aos.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--google font-->
+
+
+</head>
+
+<!--====================================================-->
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm">
+
+            <div class="header-container">
+                <div class="left_nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                        aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample03">
+                        <ul class="navbar-nav ">
+                            <li class="active">
+                                <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-columns"></i>Blog</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-columns"></i>Employee Directory</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-columns"></i>Calendar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_nav">
+                    <ul class="settings">
+                        <li><a href=""><i class="fas fa-power-off"></i> Logout(David)</a></li>
+                        <li><img src="assets/img/pexels-wallace-chuck-2659177.jpg" alt="" class="img-fluid">
+                            www.hyper...</li>
+
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="dash_body">
+
+        <div class="right_sidebar">
+            <ul class="main_icon">
+                <li class="active"><a href=""><i class="far fa-user-circle"></i></a></li>
+                <li><a href=""><i class="far fa-file-alt"></i></a></li>
+                <li><a href=""><i class="fas fa-bars"></i></a></li>
+                <li><a href=""><i class="fas fa-user-alt"></i></a></li>
+            </ul>
+        </div>
+        <div class="profile_body">
+            <h4>Controll your estate agency</h4>
+
+            <p class="test-config"><i class="fas fa-caret-down"></i> Controll Configuration</p>
+            <!-- <ul class="config_list">
+                <li>
+                    <a href="" class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                        aria-selected="true">
+                        <i class="fas fa-cog"></i>General Setting<i class="fas fa-circle"></i>
+                    </a>
+                </li>
+                <li><a href="" class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false"><i class="fas fa-question"></i>Question Manager<i
+                            class="fas fa-circle"></i></a></li>
+                <li><a href="" class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-user-graduate"></i>Participants<i class="fas fa-circle"></i></a></li>
+                <li><a href=""><i class="fas fa-vial"></i>Recents Exams<i class="fas fa-circle"></i></a></li>
+                <li><a href=""><i class="fas fa-poll-h"></i>Results<i class="fas fa-circle"></i></a></li>
+                <li><a href=""><i class="fas fa-phone-alt"></i>Support<i class="fas fa-circle"></i></a></li>
+            </ul> -->
+            <ul class="nav" id="myTab" role="tablist">
+
+                <li role="presentation">
+                    <button class="active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab"
+                        aria-controls="home" aria-selected="true"> <i class="fas fa-cog"></i>Details<i
+                            class="fas fa-circle"></i></button>
+                </li>
+                <li role="presentation">
+                    <button id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab"
+                        aria-controls="profile" aria-selected="false"><i class="fas fa-sign"></i>Property<i
+                            class="fas fa-circle"></i></button>
+                </li>
+                <li role="presentation">
+                    <button id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab"
+                        aria-controls="contact" aria-selected="false"><i class="fas fa-vial"></i>Owner<i
+                            class="fas fa-circle"></i></button>
+                </li>
+                <li role="presentation">
+                    <button id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab"
+                        aria-controls="contact" aria-selected="false"><i class="fas fa-hands-helping"></i>Deals<i
+                            class="fas fa-circle"></i></button>
+                </li>
+                <li role="presentation">
+                    <button id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab"
+                        aria-controls="contact" aria-selected="false"><i class="fas fa-tags"></i>Price<i
+                            class="fas fa-circle"></i></button>
+                </li>
+                <li role="presentation">
+                    <button id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab"
+                        aria-controls="contact" aria-selected="false"><i class="fas fa-place-of-worship"></i>Trending<i
+                            class="fas fa-circle"></i></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="left_sidebar">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h4>Details Table</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>APN </th>
+                                <th>Address</th>
+                                <th>County</th>
+                                <th>Size</th>
+                                <th>Status</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Vegas</td>
+                                <td>USA</td>
+                                <td>1000 sq.ft</td>
+                                <td>Fit</td>
+                                <td>50,000</td>
+                                <td type="button"><i class="fas fa-ellipsis-h"></i>
+                                    <ul class="action_list">
+                                        <li><a href="" style="color: rgb(228, 225, 28);">Details </a>
+                                        </li>
+                                        <li><a class="popup-with-zoom-anim" href="#small-dialog"
+                                                style="color: rgb(28, 115, 228);">Edit</a></li>
+                                        <li><a href="" style="color: rgb(54, 197, 18);">Add to campaign</a></li>
+                                        <li><a href="" style="color: rgb(228, 28, 28);">Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            </div>
+        </div>
+
+    </section>
+    <section id="activity">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5>Import your Details:</h5>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="activity_list">
+                        <li><a a class="B-1" href="#button-1">Button 1</a></li>
+                        <li><a a class="B-2" href="#button-2">Button 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>APN </th>
+                    <th>Address</th>
+                    <th>County</th>
+                    <th>Size</th>
+                    <th>Status</th>
+                    <th>Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" value="1"></td>
+                    <td><input type="text" value="Vegas"></td>
+                    <td><input type="text" value="USA"></td>
+                    <td><input type="text" value="1000 sq.ft"></td>
+                    <td><input type="text" value="Fit"></td>
+                    <td><input type="text" value="50,000"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="button-1" class="zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h6 class="text-center" >Personal Details</h6>
+                    <form action="" class="perso">
+                        <label for="">Select Your Country:</label>
+                        <select name="" id="myDropdown">
+                            <option value="1" data-imagesrc="assets\img\illustration-usa-flag_53876-18165.jpg">USA
+                            </option>
+                            <option value="2" data-imagesrc="assets\img\illustration-usa-flag_53876-18165.jpg">USA
+                            </option>
+                            <option value="3" data-imagesrc="assets\img\illustration-usa-flag_53876-18165.jpg">USA
+                            </option>
+                        </select>
+                        <label for="">Select Your State:</label>
+                        <select name="" id="myDropdown-2">
+                            <option value="1" >Los Angles
+                            </option>
+                            <option value="2" >Vegas
+                            </option>
+                            <option value="3" >Texus
+                            </option>
+                        </select>
+                        <label for="">Zip Code:</label><br>
+                        <input type="number" placeholder="Enter your zipcode"><br>
+
+                        <label for="">APN of Records:</label><br>
+                        <input type="number" placeholder="Enter your zipcode"><br> 
+                        <div class="text-center">
+                             <button class="action_tab">
+                                 Complete Import
+                             </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="button-2" class="zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h6 class="text-center" >Import File</h6>
+                    <form action="" class="perso">
+                        <label for="">Select Your File:</label>
+                        <select name="" id="myDropdown-3">
+                            <option value="1">Excel
+                            </option>
+                            <option value="2" >json
+                            </option>
+                            <option value="3" >CSV
+                            </option>
+                        </select>
+                        <label for="">File Format:</label>
+                        <select name="" id="myDropdown-4">
+                            <option value="1" >HTML
+                            </option>
+                            <option value="2" >PSD
+                            </option>
+                            <option value="3" >Js
+                            </option>
+                        </select> 
+                        <div class="text-center">
+                             <button class="action_tab">
+                                 Complete Import
+                             </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====================================================-->
+
+    <!--js plugins-->
+    <!--jquery.min.js-->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--bootstrap.min.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"
+        integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+    <script src="assets/js/style.js"></script>
+
+
+    <script>
+        $('#myDropdown').ddslick({
+
+            width: '100%',
+            selectText: "Select your preferred social network",
+            imagePosition: "left",
+            onSelected: function (selectedData) {
+                //callback function: do something with selectedData;
+            }
+        });
+        $('#myDropdown-2').ddslick({
+
+width: '100%',
+selectText: "Select your preferred social network",
+imagePosition: "left",
+onSelected: function (selectedData) {
+    //callback function: do something with selectedData;
+}
+});
+$('#myDropdown-3').ddslick({
+
+width: '100%',
+selectText: "Select your preferred social network",
+imagePosition: "left",
+onSelected: function (selectedData) {
+    //callback function: do something with selectedData;
+}
+});
+$('#myDropdown-4').ddslick({
+
+width: '100%',
+selectText: "Select your preferred social network",
+imagePosition: "left",
+onSelected: function (selectedData) {
+    //callback function: do something with selectedData;
+}
+});
+    </script>
+</body>
+
+</html>
